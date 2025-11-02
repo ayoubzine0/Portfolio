@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>[Your Name] Portfolio</title>
+  <title>AYOUB ZINE EL AABIDINE | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -12,10 +12,10 @@
     <div class="hero-content">
       <img src="https://i.imgur.com/vqrmKcE.jpeg" alt="My Photo" class="profile-pic" />
       <h1>Hi, I'm AYOUB ZINE EL AABIDINE</h1>
-      <p class="subtitle">Web Designer
+      <p class="subtitle">Web Designer</p>
       <p class="description">
-       I’m a passionate digital designer focused on creating visual identities that connect with people.
-       From logos and websites to social media posts, flyers, and clothing visuals, I bring ideas to life through bold and effective design.
+        I’m a passionate digital designer focused on creating visual identities that connect with people.
+        From logos and websites to social media posts, flyers, and clothing visuals, I bring ideas to life through bold and effective design.
       </p>
     </div>
   </header>
@@ -24,20 +24,47 @@
   <section class="projects">
     <h2>My Projects</h2>
     <div class="project-grid">
-      <a href="https://ayoubzine0.github.io/Smashbross/" class="project-card" style="background-image: url('https://i.imgur.com/cZPT4aL.jpeg');">
+      <!-- Real Websites -->
+      <a href="https://ayoubzine0.github.io/Smashbross/" target="_blank" class="project-card" 
+         style="background-image: url('https://i.imgur.com/cZPT4aL.jpeg');">
         <div class="overlay">Small Food Business website</div>
       </a>
-      <a href="https://ayoubzine0.github.io/SmashBros/" class="project-card" style="background-image: url('https://i.imgur.com/giMBWC6.png');">
+
+      <a href="https://ayoubzine0.github.io/SmashBros/" target="_blank" class="project-card"
+         style="background-image: url('https://i.imgur.com/giMBWC6.png');">
         <div class="overlay">Website for Motorcycle parts business</div>
       </a>
-      <a href="https://example.com/project3" class="project-card" style="background-image: url('https://i.imgur.com/project3.jpg');">
-        <div class="overlay">Project 3</div>
-      </a>
-      <a href="https://example.com/project4" class="project-card" style="background-image: url('https://i.imgur.com/project4.jpg');">
-        <div class="overlay">Project 4</div>
-      </a>
+
+      <!-- PNG Designs (popup) -->
+      <div class="project-card popup-trigger" 
+           data-type="image" 
+           data-src="https://i.imgur.com/3yOH50Y.png" 
+           style="background-image: url('https://i.imgur.com/3yOH50Y.png');">
+        <div class="overlay">Logo Design</div>
+      </div>
+
+      <div class="project-card popup-trigger"
+           data-type="image"
+           data-src="https://i.imgur.com/tObpFSX.png"
+           style="background-image: url('https://i.imgur.com/tObpFSX.png');">
+        <div class="overlay">Flyer Design</div>
+      </div>
+
+      <!-- Video Project -->
+      <div class="project-card popup-trigger"
+           data-type="video"
+           data-src="https://i.imgur.com/ZCFnFJ9.mp4"
+           style="background-image: url('https://i.imgur.com/hG0qLa5.jpeg');">
+        <div class="overlay">4-Second Ad</div>
+      </div>
     </div>
   </section>
+
+  <!-- Popup Modal -->
+  <div id="popup" class="popup">
+    <span class="close-btn">&times;</span>
+    <div class="popup-content"></div>
+  </div>
 
   <!-- Footer -->
   <footer>
@@ -47,6 +74,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-
-
-
