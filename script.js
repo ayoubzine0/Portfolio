@@ -1,4 +1,4 @@
-// Optional: Add simple animations or console greetings
+// Simple animation or greeting
 document.addEventListener("DOMContentLoaded", () => {
-  console.log("Welcome to my portfolio!");
+  console.log("Portfolio loaded successfully!");
 });
